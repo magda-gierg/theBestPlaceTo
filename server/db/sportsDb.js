@@ -1,5 +1,5 @@
 module.exports = {
-  getSports = getSports()
+  getSports
 }
 
 

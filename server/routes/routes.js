@@ -9,4 +9,10 @@ router.get('/', (req, res) => {
   .then(sports => {
     res.json(sports)
   })
+  .catch(err => {
+        res.status(500).send({message: err.message})
+      })
 })
+
+
+module.exports = router
