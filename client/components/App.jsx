@@ -4,17 +4,18 @@ import {connect} from 'react-redux'
 
 import Sports from './Sports'
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <h1>The Best Place To ...</h1>
-        <Route path="/" component={Sports} />
-      </Router>
-    )
-  }
+const App = () => {
+  return (
+    <Router>
+      <div className='app-container'>
+        <Header />
+        <Nav />
+        <Route exact path='/' component={Home} />      
+        <Route exact path='/categories/:category_id' component={ItemClass} />
+        <Footer />
+      </div>
+    </Router>
+  )
 }
 
-
-
-export default connect()(App)
+export default App

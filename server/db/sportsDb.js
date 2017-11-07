@@ -2,7 +2,6 @@ module.exports = {
   getSports
 }
 
-
 const getSports = (db) => {
-  return db('sports')
+  return db('sports').select('*').orderBy('name')
 }
