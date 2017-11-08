@@ -1,11 +1,11 @@
 var express = require('express')
 var router = express.Router()
 
-var sportsDb = require('../db/sportsDb')
+var sports = require('../db/sports')
 
 router.get('/', (req, res) => {
   let db = req.app.get('db')
-  sportsDb.getSports(db)
+  sports.getSports(db)
   .then(sports => {
     res.json(sports)
   })

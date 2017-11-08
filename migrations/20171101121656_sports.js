@@ -1,8 +1,8 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTableIfNotExists('sports', (table) => {
-      table.increments('id')
-      table.string('name')
-      table.string('category')
+      table.increments('sport_id')
+      table.string('sport_name')
+      table.string('sport_category')
   })
 };
 
