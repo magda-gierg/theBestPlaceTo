@@ -4,16 +4,15 @@ import {connect} from 'react-redux'
 
 import Header from './Header'
 import Footer from './Footer'
-import Sports from './Sports'
+// import Nav from './Nav'
+// import Sports from './containers/Sports'
 
 const App = () => {
   return (
     <Router>
       <div className='app-container'>
         <Header />
-        <Nav />
-        // <Route exact path='/' component={} />      
-        // <Route exact path='/categories/:category_id' component={ItemClass} />
+        // <Nav />
         <Footer />
       </div>
     </Router>

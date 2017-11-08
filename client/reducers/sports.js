@@ -1,4 +1,4 @@
-function categories (state = [], action = {}) {
+function sports (state = [], action = {}) {
   switch (action.type) {
     case 'RECEIVE_SPORTS':
       return action.sports
