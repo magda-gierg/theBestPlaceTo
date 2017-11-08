@@ -1,0 +1,38 @@
+/*** Header ***/
+
+.header {
+  background-color: #5EA8A7;
+  height: 25vh;
+  margin: 0px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: none;
+}
+
+.header-text {
+  color: #fff;
+  display: inline-block;
+  text-align: left;
+  margin-left: 2%;
+  margin-top: 10vh;
+  height: 100%;
+  width: auto;
+}
+
+.the-best {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 10vh;
+}
+
+
+@media screen and (max-width: 1030px) {
+  .header-img {
+    display: none;
+  }
+}
