@@ -5,9 +5,33 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('sports').insert([
-        {id: 1, name: 'surfing', category: 'water', description: 'For a lot of surfers, the best spot to surf would be the one where wind, swell, direction, tides, and seafloor meet. Wind creates the quality of the surfing waves, while its force and interaction with the direction of the swell, the tide in a certain hour, and type and status of the ocean floor create a certain wave condition.', image_url: 'https://images.unsplash.com/photo-1456207242739-ff52c0c7413c?auto=format&fit=crop&w=1517&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D' },
-        {id: 2, name: 'skiing', category: 'mountain', description: 'the most consistently fresh and soft powder in the world.', image_url: 'https://images.unsplash.com/photo-1507492147080-3d1b3e5cd0aa?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D'},
-        {id: 3, name: 'mountain bike', category: 'mountain', description: 'The BEST Mountain Bike Trails in the World', image_url: 'https://images.unsplash.com/photo-1464067547789-52c82f429121?auto=format&fit=crop&w=701&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D' }
+        {id: 1, name: 'surfing', category: 'water'},
+        {id: 2, name: 'skiing', category: 'mountain'},
+        {id: 3, name: 'mountain biking', category: 'mountain'},
+          {id: 4, name: 'snorkeling', category: 'water'},
+          {id: 5, name: 'running', category: 'outside'},
+          {id: 6, name: 'rock climbing', category: 'mountain'},
+          {id: 7, name: 'kitesurfing', category: 'water'},
+          {id: 8, name: 'parasailing', category: 'water'},
+          {id: 9, name: 'hiking', category: 'mountain'},
+          {id: 10, name: 'diving', category: 'water'},
+          {id: 11, name: 'kayaking', category: 'water'},
+          {id: 12, name: 'paragliding', category: 'air'},
+          {id: 13, name: 'sky diving', category: 'air'},
+          {id: 14, name: 'golf', category: 'outside'},
+          {id: 15, name: 'windsurfing', category: 'water'},
+          {id: 16, name: 'snowboarding', category: 'mountain'},
+          {id: 17, name: 'treeking', category: 'mountain'},
+          {id: 18, name: 'ice climbing', category: 'mountain'},
+          {id: 19, name: 'parachuting', category: 'air'},
+          {id: 20, name: 'caving', category: 'mountain'},
+          {id: 21, name: 'cave diving', category: 'water'},
+          {id: 22, name: 'canyoning', category: 'water'},
+          {id: 23, name: 'cycling', category: 'outside'},
+          {id: 24, name: 'scrambling', category: 'mountain'},
+          {id: 25, name: 'white watre rafting', category: 'water'},
+          {id: 26, name: 'horse riding', category: 'outside'},
+          {id: 27, name: 'gliding', category: 'air'}        
       ]);
     });
 };

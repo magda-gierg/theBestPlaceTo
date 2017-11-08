@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 import Header from './Header'
 import Footer from './Footer'
-// import Nav from './Nav'
+import Nav from './Nav'
 // import Sports from './containers/Sports'
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
     <Router>
       <div className='app-container'>
         <Header />
-        // <Nav />
+        <Nav />
         <Footer />
       </div>
     </Router>

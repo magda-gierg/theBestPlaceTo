@@ -3,8 +3,6 @@ exports.up = function(knex, Promise) {
       table.increments('id')
       table.string('name')
       table.string('category')
-      table.string('description')
-      table.string('image_url')
   })
 };
 
