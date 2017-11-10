@@ -16,7 +16,7 @@ exports.seed = function(knex, Promise) {
       {sport_id: 10, sport_name: 'diving', sport_category: 'water'},
       {sport_id: 11, sport_name: 'kayaking', sport_category: 'water'},
       {sport_id: 12, sport_name: 'paragliding', sport_category: 'air'},
-      {sport_id: 13, sport_name: 'sky diving', sport_category: 'air'},
+      {sport_id: 13, sport_name: 'skydiving', sport_category: 'air'},
       {sport_id: 14, sport_name: 'golf', sport_category: 'outside'},
       {sport_id: 15, sport_name: 'windsurfing', sport_category: 'water'},
       {sport_id: 16, sport_name: 'snowboarding', sport_category: 'mountain'},
