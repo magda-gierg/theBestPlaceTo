@@ -1,0 +1,58 @@
+exports.seed = function(knex, Promise) {
+  // Deletes ALL existing entries
+  return knex('places').del()
+  .then(function () {
+    // Inserts seed entries
+    return knex('sports').insert([
+      {place_id: 1, place_name: 'Tofino, Vancouver Island, Canada', sport_id: 1},
+      {place_id: 2, place_name: 'White Beach, Okinawa, Japan', sport_id: 1},
+      {place_id: 3, place_name: 'Revelstoke, Canada', sport_id: 2},
+      {place_id: 4, place_name: 'Meribel, France', sport_id: 2},
+      {place_id: 5, place_name: 'Alyeska, Alaska, USA', sport_id: 2},
+      {place_id: 6, place_name: 'Zermatt, Switzerland', sport_id: 16},
+      {place_id: 7, place_name: 'Lost Lake Trail, US, Alaska, Seward', sport_id: 3},
+      {place_id: 8, place_name: 'Colorado Trail, US, Colorado, Denver', sport_id: 3},
+      {place_id: 9, place_name: 'Ambergris Caye, Belize', sport_id: 4},
+      {place_id: 10, place_name: 'The Big Island, Hawaii', sport_id: 4},
+      {place_id: 11, place_name: 'Komodo Island, Indonesia', sport_id: 4},
+      {place_id: 12, place_name: 'CLIFFS OF MOHER, IRELAND', sport_id: 5},
+      {place_id: 13, place_name: 'SNAPPER ROCKS, GOLD COAST, AUSTRALIA', sport_id: 5},
+      {place_id: 14, place_name: 'Red River Gorge in Stanton, Kentucky', sport_id: 6},
+      {place_id: 15, place_name: 'Otter Cliff in Acadia National Park, Maine', sport_id: 6},
+      {place_id: 16, place_name: 'Kalymnos Island in the Dodecanese Islands, Greece', sport_id: 6},
+      {place_id: 17, place_name: 'Grand Cayman, Cayman Islands', sport_id: 7},
+      {place_id: 18, place_name: 'Nabq Bay, Egypt', sport_id: 7},
+      {place_id: 19, place_name: 'Copacabana, Rio de Janerio, Brazil', sport_id: 8},
+      {place_id: 20, place_name: 'Miami, Florida, USA', sport_id: 8},
+      {place_id: 21, place_name: 'Inca Trail, Peru', sport_id: 9},
+      {place_id: 22, place_name: 'The Torres del Paine “W” Circuit, Torres del Paine National Park, Patagonia, Chile', sport_id: 9},
+      {place_id: 23, place_name: 'Kilimanjaro, Tanzania, Africa', sport_id: 9},
+      {place_id: 24, place_name: 'Cape Kri - Raja Ampat, Indonesia', sport_id: 10},
+      {place_id: 25, place_name: 'Barracuda Point - Sipadan Island', sport_id: 10},
+      {place_id: 26, place_name: 'Thistlegorm - Egyptian Red Sea', sport_id: 10},
+      {place_id: 27, place_name: 'MILFORD SOUND, NEW ZEALAND', sport_id: 11},
+      {place_id: 28, place_name: 'VANCOUVER ISLAND, CANADA', sport_id: 11},
+      {place_id: 29, place_name: 'TORRES DEL PAINE NATIONAL PARK, CHILE', sport_id: 11},
+      {place_id: 30, place_name: 'Bazaruto Archipelago, Mozambique', sport_id: 12},
+      {place_id: 31, place_name: 'Wengen, Canton of Bern, Switzerland', sport_id: 12},
+      {place_id: 32, place_name: 'Castelluccio, Umbria, Italy', sport_id: 12},
+      {place_id: 33, place_name: 'Ambergris Caye, Belize', sport_id: 4},
+      {place_id: 34, place_name: 'The Big Island, Hawaii', sport_id: 4},
+      {place_id: 35, place_name: 'Komodo Island, Indonesia', sport_id: 4},
+      {place_id: 36, place_name: 'CLIFFS OF MOHER, IRELAND', sport_id: 5},
+      {place_id: 37, place_name: 'SNAPPER ROCKS, GOLD COAST, AUSTRALIA', sport_id: 5},
+      {place_id: 38, place_name: 'Red River Gorge in Stanton, Kentucky', sport_id: 6},
+      {place_id: 39, place_name: 'Otter Cliff in Acadia National Park, Maine', sport_id: 6},
+      {place_id: 40, place_name: 'Kalymnos Island in the Dodecanese Islands, Greece', sport_id: 6},
+      {place_id: 41, place_name: 'Grand Cayman, Cayman Islands', sport_id: 7},
+      {place_id: 42, place_name: 'Nabq Bay, Egypt', sport_id: 7},
+      {place_id: 43, place_name: 'Copacabana, Rio de Janerio, Brazil', sport_id: 8},
+      {place_id: 44, place_name: 'Miami, Florida, USA', sport_id: 8},
+      {place_id: 45, place_name: 'Inca Trail, Peru', sport_id: 9},
+      {place_id: 46, place_name: 'The Torres del Paine “W” Circuit, Torres del Paine National Park, Patagonia, Chile', sport_id: 9},
+      {place_id: 47, place_name: 'Kilimanjaro, Tanzania, Africa', sport_id: 9},
+      {place_id: 48, place_name: 'Cape Kri - Raja Ampat, Indonesia', sport_id: 10},
+
+    ]);
+  });
+};
