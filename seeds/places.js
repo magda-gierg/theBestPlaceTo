@@ -3,7 +3,7 @@ exports.seed = function(knex, Promise) {
   return knex('places').del()
   .then(function () {
     // Inserts seed entries
-    return knex('sports').insert([
+    return knex('places').insert([
       {place_id: 1, place_name: 'Tofino, Vancouver Island, Canada', sport_id: 1},
       {place_id: 2, place_name: 'White Beach, Okinawa, Japan', sport_id: 1},
       {place_id: 3, place_name: 'Revelstoke, Canada', sport_id: 2},
