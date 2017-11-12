@@ -52,7 +52,28 @@ exports.seed = function(knex, Promise) {
       {place_id: 46, place_name: 'Yosemite National Park, California', sport_id: 18},
       {place_id: 47, place_name: 'Mount Everest, Nepal', sport_id: 19},
       {place_id: 48, place_name: 'Grand Canyon, USA', sport_id: 19},
-
+      {place_id: 49, place_name: 'Kartchner Caverns, Arizona, USA', sport_id: 20},
+      {place_id: 50, place_name: 'Harrison’s Cave - Allen View, Barbados', sport_id: 20},
+      {place_id: 51, place_name: 'CENOTE ANGELITA - TULUM, MEXICO', sport_id: 21},
+      {place_id: 52, place_name: 'EMERGENCE DU RUSSEL - DORDOGNE REGION, FRANCE', sport_id: 21},
+      {place_id: 53, place_name: 'ORDA CAVE - PERM REGION, RUSSIA', sport_id: 21},
+      {place_id: 54, place_name: 'Agawa Canyon, Canada', sport_id: 22},
+      {place_id: 55, place_name: 'Zion National Park, Utah, USA', sport_id: 22},
+      {place_id: 56, place_name: 'Blue Mountains, Australia', sport_id: 22},
+      {place_id: 57, place_name: 'The Great Ocean Road, Victoria, Australia', sport_id: 23},
+      {place_id: 58, place_name: 'The Karakoram Highway, China-Pakistan', sport_id: 23},
+      {place_id: 59, place_name: 'Cycle Route 10, Amsterdam, Holland', sport_id: 23},
+      {place_id: 60, place_name: 'Pinnacle Ridge in the Lake District, Great Britain', sport_id: 24},
+      {place_id: 61, place_name: 'Bilberry Terrace in Snowdonia, Great Britain', sport_id: 24},
+      {place_id: 62, place_name: 'Colorado River, Grand Canyon, USA', sport_id: 25},
+      {place_id: 63, place_name: 'Zambezi River, Zimbabwe', sport_id: 25},
+      {place_id: 64, place_name: 'Futaleufu River, Chile', sport_id: 25},
+      {place_id: 65, place_name: 'Valle de Bravo, Mexico', sport_id: 26},
+      {place_id: 66, place_name: 'Masai Mara, Kenya', sport_id: 26},
+      {place_id: 67, place_name: 'Loire Valley, France', sport_id: 26},
+      {place_id: 68, place_name: 'Interlaken District, Swizerland', sport_id: 27},
+      {place_id: 69, place_name: 'Magaliesburg, Johannesburg, South Africa', sport_id: 27},
+      {place_id: 70, place_name: 'Queenstown, New Zealand', sport_id: 27}
     ]);
   });
 };
