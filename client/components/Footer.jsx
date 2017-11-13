@@ -7,7 +7,6 @@ const Footer = () => {
         <div className='footer-text'>
           <a href='/' style={{color: '#fff'}}>
             <span className='the-best'>the best place to...</span>
-            <p className='footer-slogan'>Thank you for visiting!</p>
           </a>
         </div>
       </div>
