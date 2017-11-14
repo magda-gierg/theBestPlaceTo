@@ -12,14 +12,10 @@ body {
   padding: 0px;
 }
 
-.orange-hr {
-  border-top: 3px solid #FA824C;
-}
-
 /*** Header ***/
 
 .header {
-  background-color: #336B87;
+  background-color: #80BD9E;
   height: 25vh;
   margin: 0px;
 }
@@ -45,7 +41,7 @@ body {
 .the-best {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
-  font-size: 10vh;
+  font-size: 6vh;
 }
 
 @media screen and (max-width: 1030px) {
@@ -57,7 +53,7 @@ body {
 /*** Footer ***/
 
 .footer {
-  background-color: #336B87;
+  background-color: #80BD9E;
   height: 25vh;
   margin: 0px;
   line-height: 0;
@@ -115,4 +111,63 @@ body {
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   color:  #FA824C;
+}
+
+/*** Search Bar ***/
+
+.search-bar-body {
+  min-height: 35vh;
+  width: 100%;
+  margin: 0px;
+}
+
+.search-container {
+  text-align: center;
+  justify-content: center;
+}
+
+.search-box-ready {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.search-box-ready input {
+  width: 50%;
+}
+
+.search-bar-header-ready {
+  color: #F98866;
+  font-weight: bold;
+  padding-top: 5vh;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.search-bar-header {
+  color: #F98866;
+  font-weight: bold;
+  padding-top: 5vh;
+  text-align: center;
+  font-size: 3rem;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.search-box {
+  padding-top: 25px;
+  text-align: center;
+}
+
+
+.search-box input {
+  color: #33C3F0;
+  text-align: center;
+  height: 15vh;
+  width: 40%;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 3vh;
 }
