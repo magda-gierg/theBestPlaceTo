@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 
 import SearchResults from './SearchResults'
 import {getSports} from '../actions/sports'
-import {getPlaceBySport} from '../actions/placesBySport'
+import {getPlacesBySport} from '../actions/placesBySport'
 
 class SearchBar extends React.Component {
   constructor (props) {
@@ -36,7 +36,7 @@ class SearchBar extends React.Component {
 
   componentDidMount () {
     this.props.dispatch(getSports())
-    this.props.dispatch(getPlaceBySport())
+    this.props.dispatch(getPlacesBySport())
     this.searchHandler = this.searchHandler.bind(this)
   }
 
@@ -54,7 +54,7 @@ class SearchBar extends React.Component {
   filterSearchSports (searchTerm) {
     if (searchTerm == '' || !searchTerm) return []
     return this.state.sports.filter((sport) => {
-      return sports.sport_name.toLowerCase().includes(searchTerm.toLowerCase())
+      return sport.sport_name.toLowerCase().includes(searchTerm.toLowerCase())
     })
   }
   renderSportInfo (sport, key) {
