@@ -176,3 +176,32 @@ body {
   font-family: 'Spinnaker', sans-serif;
   font-size: 3vh;
 }
+
+.search-results-list {
+  min-height: 5vh;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.search-results-list button {
+  background-color: #F98866;
+  color: #fff;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+  white-space: normal;
+}
+
+.search-results-list button:hover {
+    background-color: #fff;
+    color: #FA824C;
+    border-color: #FA824C;
+}
+
+.search-result {
+  justify-content: center;
+  display: inline-block;
+  text-align: center;
+}

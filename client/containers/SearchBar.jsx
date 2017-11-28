@@ -15,20 +15,20 @@ class SearchBar extends React.Component {
       searchResults: [],
       showPlaces: false,
       sortedPlaces: []
-
     }
   }
 
-  showPlaces (selectedSport) {
-    let sortedPlaces = this.state.placesBySport.filter((sport) => {
-      return sport.sport_id == selectedSport.sport_id
-    })
-    this.setState({sortedPlaces, showPlaces: true})
-  }
+  // showPlace (selectedSport) {
+  //   let sortedPlaces = this.state.sports.filter((sport) => {
+  //     return sport.sport_id == selectedSport.sport_id
+  //   })
+  //   this.setState({sortedPlaces, showPlaces: true})
+  // }
+
   renderPlaces () {
     return (
       <div className='search-results-places' >
-        <h5>the best places to do {sport.sport_id}:</h5>
+        <h5>the best places to do:</h5>
         <SearchResults places={this.state.sortedPlaces}/>
       </div>
     )
@@ -48,21 +48,23 @@ class SearchBar extends React.Component {
       sortedPlaces: []
     })
   }
+
   componentWillReceiveProps ({placesBySport, sports}) {
     this.setState({placesBySport, sports})
   }
+
   filterSearchSports (searchTerm) {
     if (searchTerm == '' || !searchTerm) return []
     return this.state.sports.filter((sport) => {
       return sport.sport_name.toLowerCase().includes(searchTerm.toLowerCase())
     })
   }
+
   renderSportInfo (sport, key) {
     return <div className="search-result" key={key}>
       <button onClick={() => this.showPlace(sport)}>{sport.sport_name}</button>
     </div>
   }
-
 
   render() {
     const {sports, dispatch} = this.props
